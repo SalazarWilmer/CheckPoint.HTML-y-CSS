@@ -1,0 +1,77 @@
+*{
+    margin:0
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: crimson;
+    display: flex;
+}
+
+.volador {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: pink;
+}
+.aside{
+    background-color: aquamarine;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.bloque1{
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+.nav{
+
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   height: 100vh;
+    background-color: green;
+
+}
+
+@media  screen and (max-width: 768px)  { 
+ 
+    .aside {
+        display: none;
+
+    }
+    .derecha {
+        width: 100vw;
+        
+        
+    }
+
+    .nav {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .search {
+        display: none;
+
+    }
+    .bloque {
+        margin: 20px;
+        text-align: center;
+        
+    }
+}
